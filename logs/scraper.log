@@ -232,3 +232,52 @@
 ⚠  No se encontraron artículos relevantes hoy.
 2026-03-09 20:26:23,734 [WARNING] No hay artículos que guardar hoy.
 2026-03-09 20:26:23,735 [INFO] === Scraper finalizado ===
+2026-03-09 20:32:05,963 [INFO] === Iniciando scraper OSINT — 2026-03-09T20:32:05.962930 ===
+2026-03-09 20:32:05,964 [INFO] Fuentes RSS configuradas: 25
+2026-03-09 20:32:05,964 [INFO]   → CERT-EU Security Advisories
+/home/dietpi/admindash-osint/osint_scraper.py:454: DeprecationWarning: Testing an element's truth value will always return True in future versions.  Use specific 'len(elem)' or 'elem is not None' test instead.
+  date_el    = item.find("pubDate") or item.find("dc:date", RSS_NS)
+/home/dietpi/admindash-osint/osint_scraper.py:455: DeprecationWarning: Testing an element's truth value will always return True in future versions.  Use specific 'len(elem)' or 'elem is not None' test instead.
+  summary_el = item.find("description") or item.find("content:encoded", RSS_NS)
+2026-03-09 20:32:07,046 [INFO]   → CERT-EU Threat Intelligence
+2026-03-09 20:32:07,837 [INFO]   → INCIBE Avisos de Seguridad
+2026-03-09 20:32:08,714 [INFO]   → INCIBE-CERT Vulnerabilidades
+2026-03-09 20:32:09,502 [INFO]   → INCIBE Noticias
+2026-03-09 20:32:09,950 [WARNING] HTTP 404 — https://www.incibe.es/feed
+2026-03-09 20:32:09,951 [INFO]   → Dark Reading — Government
+2026-03-09 20:32:10,859 [INFO]   → SANS Internet Stormcast
+2026-03-09 20:32:12,147 [INFO]   → Administración Digital (administracion.gob.es)
+2026-03-09 20:32:12,574 [WARNING] XML parse error en Administración Digital (administracion.gob.es): not well-formed (invalid token): line 94, column 18
+2026-03-09 20:32:13,075 [INFO]   → PAe — Administración Electrónica
+2026-03-09 20:32:20,800 [INFO]   → Observatorio OBSAE
+2026-03-09 20:32:36,400 [INFO]   → datos.gob.es — Blog
+2026-03-09 20:32:36,964 [WARNING] XML parse error en datos.gob.es — Blog: not well-formed (invalid token): line 37, column 75
+2026-03-09 20:32:37,465 [INFO]   → datos.gob.es — Noticias
+2026-03-09 20:32:37,655 [WARNING] XML parse error en datos.gob.es — Noticias: not well-formed (invalid token): line 37, column 75
+2026-03-09 20:32:38,156 [INFO]   → EC Digital Strategy News
+2026-03-09 20:32:38,794 [INFO]   → EUR-Lex — OJ Diario Oficial
+2026-03-09 20:32:38,856 [WARNING] XML parse error en EUR-Lex — OJ Diario Oficial: no element found: line 1, column 0
+2026-03-09 20:32:39,356 [INFO]   → BOE — Disposiciones Generales (hoy)
+2026-03-09 20:32:39,457 [WARNING] XML parse error en BOE — Disposiciones Generales (hoy): mismatched tag: line 22, column 4
+2026-03-09 20:32:39,958 [INFO]   → BOE — Últimas disposiciones (semana)
+2026-03-09 20:32:40,056 [WARNING] XML parse error en BOE — Últimas disposiciones (semana): mismatched tag: line 22, column 4
+2026-03-09 20:32:40,557 [INFO]   → La Moncloa — Noticias de Gobierno
+2026-03-09 20:32:40,804 [WARNING] XML parse error en La Moncloa — Noticias de Gobierno: not well-formed (invalid token): line 12, column 14
+2026-03-09 20:32:41,305 [INFO]   → Senado — Actividad Legislativa
+2026-03-09 20:32:41,398 [WARNING] HTTP 404 — https://www.senado.es/rss/actualidad/rss_senado.xml
+2026-03-09 20:32:41,399 [INFO]   → Krebs on Security
+2026-03-09 20:32:42,091 [INFO]   → The Hacker News
+2026-03-09 20:32:43,031 [INFO]   → Bleeping Computer
+2026-03-09 20:32:43,616 [INFO]   → Securelist (Kaspersky ICS/APT)
+2026-03-09 20:32:45,512 [INFO]   → CISA Alerts (US-CERT)
+2026-03-09 20:32:46,855 [INFO]   → CISA Known Exploited Vulnerabilities
+2026-03-09 20:32:47,621 [INFO]   → Comisión Europea — Noticias
+2026-03-09 20:32:49,016 [INFO]   → BOE API (sumario del día)
+2026-03-09 20:32:49,112 [WARNING] HTTP 404 — https://boe.es/datosabiertos/api/boe/id/BOE-20260309
+2026-03-09 20:32:49,614 [INFO]   → datos.gob.es API
+2026-03-09 20:32:49,937 [INFO] Filtro relevancia: 0 artículos nuevos → 0 relevantes
+2026-03-09 20:32:49,938 [INFO] Resumen: 23 fuentes OK / 2 fallos / 235 ítems procesados / 0 nuevos / 0 guardados
+
+⚠  No se encontraron artículos relevantes hoy.
+2026-03-09 20:32:49,941 [WARNING] No hay artículos que guardar hoy.
+2026-03-09 20:32:49,942 [INFO] === Scraper finalizado ===
