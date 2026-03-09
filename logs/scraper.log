@@ -1,0 +1,87 @@
+2026-03-09 19:19:31,186 [INFO] === Iniciando scraper OSINT — 2026-03-09T19:19:31.186496 ===
+2026-03-09 19:19:31,187 [INFO] Fuentes RSS configuradas: 25
+2026-03-09 19:19:31,188 [INFO]   → CERT-EU Security Advisories
+2026-03-09 19:19:31,485 [WARNING] HTTP 404 — https://cert.europa.eu/publications/security-advisories/feed/
+2026-03-09 19:19:31,486 [INFO]   → CERT-EU Threat Intelligence
+2026-03-09 19:19:31,712 [WARNING] HTTP 404 — https://cert.europa.eu/publications/threat-intelligence/feed/
+2026-03-09 19:19:31,714 [INFO]   → INCIBE Avisos de Seguridad
+/home/dietpi/admindash-osint/osint_scraper.py:439: DeprecationWarning: Testing an element's truth value will always return True in future versions.  Use specific 'len(elem)' or 'elem is not None' test instead.
+  date_el    = item.find("pubDate") or item.find("dc:date", RSS_NS)
+/home/dietpi/admindash-osint/osint_scraper.py:440: DeprecationWarning: Testing an element's truth value will always return True in future versions.  Use specific 'len(elem)' or 'elem is not None' test instead.
+  summary_el = item.find("description") or item.find("content:encoded", RSS_NS)
+2026-03-09 19:19:32,711 [INFO]   → INCIBE-CERT Vulnerabilidades
+2026-03-09 19:19:33,572 [INFO]   → INCIBE Noticias
+2026-03-09 19:19:34,153 [WARNING] HTTP 404 — https://www.incibe.es/node/feed
+2026-03-09 19:19:34,156 [INFO]   → ENISA — EC Newsroom
+2026-03-09 19:19:34,367 [WARNING] HTTP 404 — https://ec.europa.eu/newsroom/enisa/rss-items/index.cfm?from=enisa
+2026-03-09 19:19:34,372 [INFO]   → ENISA Topics — NIS / Cybersecurity
+2026-03-09 19:19:34,457 [WARNING] HTTP 404 — https://www.enisa.europa.eu/topics/cyber-threats/rss_events
+2026-03-09 19:19:34,460 [INFO]   → Administración Digital (administracion.gob.es)
+2026-03-09 19:19:34,878 [WARNING] XML parse error en Administración Digital (administracion.gob.es): not well-formed (invalid token): line 94, column 18
+2026-03-09 19:19:35,381 [INFO]   → PAe — Administración Electrónica
+2026-03-09 19:19:38,062 [INFO]   → Observatorio OBSAE
+2026-03-09 19:19:38,679 [INFO]   → datos.gob.es — Blog
+2026-03-09 19:19:39,376 [WARNING] XML parse error en datos.gob.es — Blog: not well-formed (invalid token): line 37, column 75
+2026-03-09 19:19:39,878 [INFO]   → datos.gob.es — Noticias
+2026-03-09 19:19:40,340 [WARNING] XML parse error en datos.gob.es — Noticias: not well-formed (invalid token): line 37, column 75
+2026-03-09 19:19:40,843 [INFO]   → EC Digital Strategy News
+2026-03-09 19:19:41,484 [INFO]   → EUR-Lex — Reglamentos TIC recientes
+2026-03-09 19:19:41,562 [WARNING] XML parse error en EUR-Lex — Reglamentos TIC recientes: no element found: line 1, column 0
+2026-03-09 19:19:42,064 [INFO]   → BOE — Disposiciones Generales (hoy)
+2026-03-09 19:19:42,290 [WARNING] XML parse error en BOE — Disposiciones Generales (hoy): mismatched tag: line 22, column 4
+2026-03-09 19:19:42,792 [INFO]   → BOE — Últimas disposiciones (semana)
+2026-03-09 19:19:42,949 [WARNING] XML parse error en BOE — Últimas disposiciones (semana): mismatched tag: line 22, column 4
+2026-03-09 19:19:43,451 [INFO]   → Red.es Noticias
+2026-03-09 19:19:43,718 [WARNING] HTTP 404 — https://www.red.es/es/rss/actualidad
+2026-03-09 19:19:43,722 [INFO]   → Gobierno Abierto — SGAD
+2026-03-09 19:19:43,860 [WARNING] HTTP 404 — https://transparencia.gob.es/transparencia/dam/rss/noticias.xml
+2026-03-09 19:19:43,864 [INFO]   → Krebs on Security
+2026-03-09 19:19:44,608 [INFO]   → The Hacker News
+2026-03-09 19:19:45,576 [INFO]   → Bleeping Computer
+2026-03-09 19:19:46,173 [INFO]   → Securelist (Kaspersky ICS/APT)
+2026-03-09 19:19:47,838 [INFO]   → CISA Alerts (US-CERT)
+2026-03-09 19:19:48,846 [INFO]   → CISA Known Exploited Vulnerabilities
+2026-03-09 19:19:49,612 [INFO]   → EU Digital Single Market
+2026-03-09 19:19:49,808 [WARNING] HTTP 404 — https://ec.europa.eu/newsroom/dae/rss-items/index.cfm
+2026-03-09 19:19:49,810 [INFO]   → BOE API (sumario del día)
+2026-03-09 19:19:49,907 [WARNING] HTTP 404 — https://boe.es/datosabiertos/api/boe/id/BOE-20260309
+2026-03-09 19:19:50,411 [INFO]   → datos.gob.es API
+2026-03-09 19:19:50,565 [INFO] Filtro relevancia: 60 artículos nuevos → 11 relevantes
+2026-03-09 19:19:50,567 [INFO] Resumen: 17 fuentes OK / 8 fallos / 145 ítems procesados / 60 nuevos / 11 guardados
+
+============================================================
+  OSINT SCRAPER — Resumen 2026-03-09
+============================================================
+  Total artículos: 11
+
+  Por fuente:
+       6  Securelist (Kaspersky ICS/APT)
+       3  CISA Alerts (US-CERT)
+       1  INCIBE Avisos de Seguridad
+       1  CISA Known Exploited Vulnerabilities
+
+  Por severidad:
+    Crítica       6
+    Alta          5
+    Media         0
+    Info          0
+
+  Por categoría:
+      10  Ciberseguridad Internacional
+       1  Ciberseguridad
+
+  🚨 Alertas críticas/altas (11):
+    [   Alta] Múltiples vulnerabilidades en centro de administración de firewall de 
+             https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vul
+    [   Alta] Arkanix Stealer: a C++ & Python infostealer
+             https://securelist.com/arkanix-stealer/119006/
+    [Crítica] Divide and conquer: how the new Keenadu backdoor exposed links between
+             https://securelist.com/keenadu-android-backdoor/118913/
+    [   Alta] The game is over: when “free” comes at too high a price. What we know 
+             https://securelist.com/renengine-campaign-with-hijackloader-lumma-and-
+    [Crítica] Spam and phishing in 2025
+             https://securelist.com/spam-and-phishing-report-2025/118785/
+============================================================
+
+2026-03-09 19:19:50,605 [INFO] CSV guardado: data/osint_2026-03-09.csv (11 artículos)
+2026-03-09 19:19:50,610 [INFO] === Scraper finalizado ===
