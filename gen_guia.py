@@ -254,6 +254,7 @@ def indice():
         ("12", "Auditoría de fuentes / Source Auditing"),
         ("13", "Glosario / Glossary"),
         ("14", "Preguntas frecuentes / FAQ"),
+        ("15", "Vigilancia de Normativa Nueva / Normativa Watch"),
     ]
     toc_data = [["#", "Sección / Section"]]
     for num, titulo in secciones:
@@ -885,6 +886,210 @@ def seccion_ultima_captura():
 
     return elems
 
+# ── SECCIÓN 15: Vigilancia de Normativa Nueva ──────────────────
+def seccion_normativa():
+    elems = []
+    elems += h1("15. Vigilancia de Normativa Nueva / Normativa Watch")
+    elems.append(body(
+        "El módulo <b>normativa_watch.py</b> es un componente independiente que "
+        "analiza los CSVs generados por el scraper diario, detecta automáticamente "
+        "documentos que parecen normativa relevante (disposiciones BOE, reglamentos "
+        "EU, directivas, instrucciones técnicas) y los presenta en el dashboard "
+        "como candidatos para incorporar a las Referencias Documentales. "
+        "No modifica ningún archivo existente del proyecto."
+    ))
+    elems.append(sp(4))
+
+    elems += h2("15.1 Arquitectura — módulo completamente independiente")
+    elems += code([
+        "admindash-osint/",
+        "├── dashboard.py          ← NO se modifica (solo lee el CSV)",
+        "├── osint_scraper.py      ← NO se modifica",
+        "├── normativa_watch.py    ← NUEVO — detector de normativa",
+        "├── normativa_alert.py    ← NUEVO — alertas por email",
+        "├── setup_normativa.sh    ← NUEVO — instalador del cron",
+        "└── data/",
+        "    └── normativa_nuevas.csv  ← generado por normativa_watch",
+    ])
+    elems.append(sp(6))
+
+    elems += h2("15.2 Flujo de trabajo")
+    flujo_data = [
+        ["Hora", "Proceso", "Resultado"],
+        ["06:00h", "osint_scraper.py (cron)",
+         "Genera data/osint_YYYY-MM-DD.csv con artículos del día"],
+        ["08:06h", "normativa_watch.py (cron)",
+         "Lee CSVs, filtra normativa, escribe data/normativa_nuevas.csv"],
+        ["08:06h", "normativa_alert.py (si procede)",
+         "Envía email si hay normativa de severidad Alta o Crítica"],
+        ["Cualquier hora", "Dashboard tab Referencias",
+         "Muestra panel con candidatas pendientes de revisión"],
+        ["Manual", "Tú — revisión humana",
+         "Editas normativa_nuevas.csv: revisado=SI/NO"],
+    ]
+    elems.append(tabla(flujo_data, col_widths=[2.5*cm, 4.5*cm, W - 10*cm]))
+    elems.append(sp(6))
+
+    elems += h2("15.3 Qué significa «Pendiente de revisión»")
+    elems.append(body(
+        "El sistema no añade normativa automáticamente a las Referencias Documentales "
+        "porque eso requiere criterio editorial. «Pendiente de revisión» significa "
+        "que el módulo detectó un documento que parece normativa relevante, pero "
+        "<b>eres tú quien decide</b> si merece quedarse en el dashboard de forma permanente."
+    ))
+    elems.append(sp(4))
+    decision_data = [
+        ["Valor columna 'revisado'", "Significado", "Efecto en dashboard"],
+        ['""  (vacío)',
+         "Pendiente — no revisado todavía",
+         "Aparece en el panel de candidatas"],
+        ['"SI"',
+         "Aprobado — lo añades a referencias[]",
+         "Desaparece del panel (ya está en Referencias)"],
+        ['"NO"',
+         "Descartado — no es relevante",
+         "Desaparece del panel sin añadir"],
+    ]
+    elems.append(tabla(decision_data,
+        col_widths=[3.5*cm, 5*cm, W - 11.5*cm]))
+    elems.append(sp(4))
+    elems.append(body(
+        "Para incorporar una candidata aprobada a las Referencias Documentales, "
+        "edita el array <b>referencias[]</b> en dashboard.py añadiendo el bloque "
+        "correspondiente (ver Sección 11 — Comandos de Operación)."
+    ))
+    elems.append(sp(6))
+
+    elems += h2("15.4 Palabras clave de detección")
+    elems.append(body(
+        "normativa_watch.py usa tres criterios combinados para clasificar "
+        "un artículo como normativa:"
+    ))
+    kw_data = [
+        ["Criterio", "Ejemplos"],
+        ["Tipo de disposición",
+         "Real Decreto, Orden Ministerial, Reglamento (UE), Directiva (UE), "
+         "Ley Orgánica, Resolución, Circular, Instrucción Técnica"],
+        ["Ámbito de interés",
+         "ENS, eIDAS, NIS2, DORA, AI Act, RGPD, administración electrónica, "
+         "identidad digital, EUDIW, interoperabilidad, datos abiertos, PRTR"],
+        ["Fuente conocida",
+         "BOE, EUR-Lex, SEDIA, PAe, INCIBE, CCN, Comisión Europea, "
+         "La Moncloa, Congreso, Senado"],
+    ]
+    elems.append(tabla(kw_data, col_widths=[4*cm, W - 7*cm]))
+    elems.append(sp(6))
+
+    elems += h2("15.5 Comandos del módulo")
+    cmd_data = [
+        ["Comando", "Acción"],
+        ["python3 normativa_watch.py",
+         "Ejecución normal — escanea últimos 2 días de CSVs"],
+        ["python3 normativa_watch.py --test",
+         "Modo test: muestra candidatas sin guardar ni enviar email"],
+        ["python3 normativa_watch.py --dias 7",
+         "Escanear últimos 7 días (útil tras un periodo sin ejecutar)"],
+        ["python3 normativa_watch.py --reset",
+         "Limpiar caché — fuerza redetección de todo"],
+        ["python3 normativa_alert.py --test",
+         "Test de conexión SMTP + envío de email de prueba"],
+    ]
+    elems.append(tabla(cmd_data, col_widths=[5.5*cm, W - 8.5*cm]))
+    elems.append(sp(6))
+
+    elems += h2("15.6 Configuración del email de alertas")
+    elems.append(body(
+        "Las alertas por email se envían cuando se detecta normativa de severidad "
+        "<b>Alta</b> o <b>Crítica</b>. Usa exclusivamente <b>smtplib</b> "
+        "(librería estándar Python — sin dependencias externas). "
+        "Compatible con Gmail mediante App Password."
+    ))
+    elems.append(sp(4))
+    elems.append(Paragraph(
+        "⚠ Nunca guardes la contraseña directamente en el código. "
+        "Usa siempre variables de entorno.",
+        S["alert"]
+    ))
+    elems.append(sp(4))
+
+    elems += h2("Paso 1 — Crear App Password en Gmail")
+    elems += bullet([
+        "Accede a: https://myaccount.google.com/apppasswords",
+        "Requiere verificación en 2 pasos activada en la cuenta",
+        "Nombre de la app: AdminDash (o cualquier nombre)",
+        "Gmail genera una contraseña de 16 caracteres — cópiala",
+    ])
+    elems.append(sp(4))
+
+    elems += h2("Paso 2 — Configurar variables de entorno en el Odroid")
+    elems += code([
+        "# Añadir a ~/.bashrc del usuario dietpi:",
+        'echo \'export NORMATIVA_EMAIL_FROM="tucuenta@gmail.com"\' >> ~/.bashrc',
+        'echo \'export NORMATIVA_EMAIL_PASS="abcd efgh ijkl mnop"\' >> ~/.bashrc',
+        'echo \'export NORMATIVA_EMAIL_TO="mybloggingnotes@gmail.com"\' >> ~/.bashrc',
+        "",
+        "# Activar sin reiniciar:",
+        "source ~/.bashrc",
+    ])
+    elems.append(sp(4))
+    elems.append(Paragraph(
+        "⚠ El cron no carga ~/.bashrc automáticamente. Para que las variables "
+        "estén disponibles en el cron, añádelas también a ~/.profile o declara "
+        "las variables directamente en la línea del crontab (ver paso 3).",
+        S["note"]
+    ))
+    elems.append(sp(4))
+
+    elems += h2("Paso 3 — Opción alternativa: variables en el crontab")
+    elems += code([
+        "# Editar crontab:",
+        "crontab -e",
+        "",
+        "# Añadir las variables ANTES de la línea del cron:",
+        'NORMATIVA_EMAIL_FROM="tucuenta@gmail.com"',
+        'NORMATIVA_EMAIL_PASS="abcd efgh ijkl mnop"',
+        'NORMATIVA_EMAIL_TO="mybloggingnotes@gmail.com"',
+        "",
+        "# Línea del cron (ya instalada por setup_normativa.sh):",
+        "6 8 * * * cd ~/admindash-osint && venv/bin/python3 normativa_watch.py >> logs/normativa.log 2>&1",
+    ])
+    elems.append(sp(4))
+
+    elems += h2("Paso 4 — Test de la conexión email")
+    elems += code([
+        "cd ~/admindash-osint && source venv/bin/activate",
+        "python3 normativa_alert.py --test",
+        "",
+        "# Salida esperada:",
+        "# INFO  Conectando a smtp.gmail.com:587...",
+        "# INFO  Conexion SMTP correcta. Credenciales validas.",
+        "# INFO  Email de prueba enviado a mybloggingnotes@gmail.com",
+    ])
+    elems.append(sp(6))
+
+    elems += h2("15.7 Ficheros generados")
+    files_data = [
+        ["Fichero", "Contenido", "Retención"],
+        ["data/normativa_nuevas.csv",
+         "Candidatas detectadas con columnas: fecha_deteccion, "
+         "fecha_publicacion, titulo, fuente, tipo_normativa, url, "
+         "resumen, severidad, revisado",
+         "Permanente (edición manual)"],
+        ["data/.normativa_seen.json",
+         "Caché de hashes para deduplicación entre ejecuciones",
+         "90 días (TTL automático)"],
+        ["data/.alert_tmp.json",
+         "Fichero temporal de paso entre watch y alert. "
+         "Se elimina automáticamente tras el envío",
+         "Efímero"],
+        ["logs/normativa_YYYY-MM-DD.log",
+         "Log diario de ejecución del watch",
+         "No se purga automáticamente"],
+    ]
+    elems.append(tabla(files_data,
+        col_widths=[4.5*cm, 7*cm, W - 14.5*cm]))
+    return elems
+
 # ── CONSTRUCCIÓN DEL PDF ────────────────────────────────────────
 def build_pdf(output_path: str):
     doc = SimpleDocTemplate(
@@ -922,6 +1127,8 @@ def build_pdf(output_path: str):
     story += [PageBreak()]
     story += seccion_faq()
     story += [PageBreak()]
+    story += seccion_normativa()
+    story += [PageBreak()]
     story += seccion_ultima_captura()
 
     # Página final
@@ -950,4 +1157,4 @@ def build_pdf(output_path: str):
 
 if __name__ == "__main__":
     os.makedirs("data", exist_ok=True)
-    build_pdf("/mnt/user-data/outputs/guia_admindash.pdf")
+    build_pdf("data/guia_admindash.pdf")
