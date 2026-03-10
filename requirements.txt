@@ -1,6 +1,17 @@
-streamlit==1.26
-pandas==2.1
-plotly==5.19
-requests==2.32
-beautifulsoup4==4.12
-lxml==4.9
+# Dashboard Administración Digital España
+# Instalación: pip install -r requirements.txt
+# Entorno: Odroid-C2 · DietPi · ARM · Python 3.10+
+
+# ── Core dashboard ─────────────────────────────────────────────
+streamlit>=1.28.0
+plotly>=5.15.0
+pandas>=2.0.0
+
+# ── Generación de guía PDF ─────────────────────────────────────
+reportlab>=4.0.0
+
+# ── Scraper OSINT (opcionales — mejoran parsing RSS) ──────────
+requests>=2.31.0
+feedparser>=6.0.0
+beautifulsoup4>=4.12.0
+lxml>=4.9.0
