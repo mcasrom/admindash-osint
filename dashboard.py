@@ -1407,6 +1407,45 @@ with tab_refs:
     )
     st.markdown("---")
 
+    # ── PANEL NORMATIVA NUEVA (normativa_watch.py) ──────────────
+    _norm_csv = _Path("data/normativa_nuevas.csv")
+    if _norm_csv.exists():
+        try:
+            import pandas as _pd_norm
+            _df_norm = _pd_norm.read_csv(_norm_csv)
+            _pendientes = _df_norm[_df_norm.get("revisado", _pd_norm.Series(dtype=str)).fillna("") == ""]
+            if not _pendientes.empty:
+                n_crit = int((_pendientes.get("severidad","") == "Crítica").sum())
+                n_alta = int((_pendientes.get("severidad","") == "Alta").sum())
+                _badge = f"🔴 {n_crit} crítica(s)" if n_crit else f"🟠 {n_alta} alta(s)" if n_alta else f"⚪ {len(_pendientes)}"
+                with st.expander(f"🔔 Normativa nueva detectada automáticamente — {len(_pendientes)} pendiente(s) de revisión  {_badge}", expanded=n_crit > 0):
+                    st.markdown(
+                        "Candidatas detectadas por `normativa_watch.py`. "
+                        "Revisa cada una y decide si incorporarla a las Referencias Documentales. "
+                        "Para marcarla como revisada edita `data/normativa_nuevas.csv` → columna `revisado` → `SI` o `NO`."
+                    )
+                    for _, _nr in _pendientes.sort_values("fecha_deteccion", ascending=False).head(20).iterrows():
+                        _sev = _nr.get("severidad", "Info")
+                        _sev_color = {"Crítica": "#b71c1c", "Alta": "#e65100", "Media": "#f9a825"}.get(_sev, "#546e7a")
+                        _sev_icon  = {"Crítica": "🔴", "Alta": "🟠", "Media": "🟡"}.get(_sev, "⚪")
+                        _url_nr = _nr.get("url", "")
+                        _enlace_nr = f'<a href="{_url_nr}" target="_blank">🔗 Ver documento</a>' if _url_nr else ""
+                        st.markdown(f"""
+                        <div style="background:#1a1f2e;border:1px solid #2a3550;border-left:4px solid {_sev_color};
+                                    border-radius:6px;padding:10px 14px;margin:4px 0">
+                            {_sev_icon} <span style="background:{_sev_color};color:#fff;padding:1px 7px;
+                            border-radius:3px;font-size:11px">{_sev}</span>
+                            <span style="color:#90a4ae;font-size:11px;margin-left:8px">{_nr.get("tipo_normativa","")}</span>
+                            <span style="color:#90a4ae;font-size:11px;margin-left:8px">{_nr.get("fecha_publicacion","")}</span><br>
+                            <strong style="color:#e3f2fd">{_nr.get("titulo","")[:100]}</strong><br>
+                            <span style="color:#78909c;font-size:12px">{_nr.get("fuente","")}</span>
+                            {"  ·  " + _enlace_nr if _enlace_nr else ""}
+                        </div>
+                        """, unsafe_allow_html=True)
+        except Exception as _e_norm:
+            pass  # Si hay cualquier error, no interrumpe el tab
+    # ── FIN PANEL NORMATIVA NUEVA ────────────────────────────────
+
     # Filtros
     col_rf1, col_rf2 = st.columns([1, 2])
     filtro_tipo = col_rf1.selectbox("Tipo de fuente", ["Todas", "ES — España", "EU — Europa"])
