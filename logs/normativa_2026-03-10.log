@@ -1,0 +1,10 @@
+2026-03-10 09:08:32,757 [INFO] === normativa_watch — 2026-03-10T09:08:32.757460 ===
+2026-03-10 09:08:32,761 [INFO] CSVs leídos (1d): 11 artículos totales
+2026-03-10 09:08:32,763 [INFO] Resumen: 11 escaneados / 1 nuevas / 0 duplicadas / 1 total en CSV
+2026-03-10 09:11:54,752 [INFO] === normativa_watch — 2026-03-10T09:11:54.752480 ===
+2026-03-10 09:11:54,756 [INFO] CSVs leídos (2d): 11 artículos totales
+2026-03-10 09:11:54,758 [INFO] Resumen: 11 escaneados / 1 nuevas / 0 duplicadas / 1 total en CSV
+2026-03-10 09:12:09,105 [INFO] === normativa_watch — 2026-03-10T09:12:09.104902 ===
+2026-03-10 09:12:09,109 [INFO] CSVs leídos (2d): 11 artículos totales
+2026-03-10 09:12:09,112 [INFO] CSV normativa actualizado: data/normativa_nuevas.csv (1 entradas)
+2026-03-10 09:12:09,114 [INFO] Resumen: 11 escaneados / 1 nuevas / 0 duplicadas / 1 total en CSV

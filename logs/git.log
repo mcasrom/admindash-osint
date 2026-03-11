@@ -28,3 +28,9 @@ To https://github.com/mcasrom/admindash-osint.git
  4 files changed, 98 insertions(+)
 To https://github.com/mcasrom/admindash-osint.git
    a012e7b..2b43c17  main -> main
+[main a2ebc2e] Auto update OSINT 2026-03-10 07:05
+ 6 files changed, 483 insertions(+)
+ create mode 100644 data/osint_2026-03-10.csv
+ create mode 100644 logs/scraper_2026-03-10.log
+To https://github.com/mcasrom/admindash-osint.git
+   2b43c17..a2ebc2e  main -> main
