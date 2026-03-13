@@ -44,3 +44,11 @@ To https://github.com/mcasrom/admindash-osint.git
  create mode 100644 normativa_watch.py
 To https://github.com/mcasrom/admindash-osint.git
    4b3dbc6..999940a  main -> main
+[main 266d35b] Auto update OSINT 2026-03-12 07:05
+ 7 files changed, 238 insertions(+)
+ create mode 100644 data/osint_2026-03-12.csv
+ create mode 100644 logs/normativa.log
+ create mode 100644 logs/normativa_2026-03-11.log
+ create mode 100644 logs/scraper_2026-03-12.log
+To https://github.com/mcasrom/admindash-osint.git
+   999940a..266d35b  main -> main
