@@ -1,0 +1,6 @@
+date,title,source,category,url,summary,severity
+2026-03-21,Cyber OpSec Fail: Beast Gang Exposes Ransomware Server,Dark Reading — Government,Ciberseguridad EU,https://www.darkreading.com/threat-intelligence/opsec-beast-gang-exposes-ransomware-server,,Crítica
+2026-03-21,Interlock Ransomware Targets Cisco Enterprise Firewalls,Dark Reading — Government,Ciberseguridad EU,https://www.darkreading.com/threat-intelligence/interlock-ransomware-targets-cisco-enterprise-firewalls,,Crítica
+2026-03-21,Native Launches With Security Control Plane for Multicloud,Dark Reading — Government,Ciberseguridad EU,https://www.darkreading.com/cloud-security/native-launches-security-control-plane-multicloud,,Alta
+2026-03-21,"GSocket Backdoor Delivered Through Bash Script, (Fri, Mar 20th)",SANS Internet Stormcast,Ciberseguridad EU,https://isc.sans.edu/diary/rss/32816,"Yesterday, I discovered a malicious Bash script that installs a GSocket backdoor on the victim’s computer. I don’t know the source of the script not how it is delivered to the victim. GSocket[ 1 ] is a networking tool, but also a relay infrastructure, that enables direct, peer-to-peer–style communic…",Alta
+2026-03-21,Speech by Commissioner Lahbib at the European Citizens Panel on Preparedness,Comisión Europea — Noticias,Política Digital EU,https://ec.europa.eu/commission/presscorner/detail/en/speech_26_675,,Info
