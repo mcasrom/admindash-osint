@@ -1,0 +1,3 @@
+date,title,source,category,url,summary,severity
+2026-03-24,Ransomware's New Era: Moving at AI Speed,Dark Reading — Government,Ciberseguridad EU,https://www.darkreading.com/endpoint-security/ransomware-new-era-moving-ai-speed,,Crítica
+2026-03-24,‘CanisterWorm’ Springs Wiper Attack Targeting Iran,Krebs on Security,Ciberseguridad Internacional,https://krebsonsecurity.com/2026/03/canisterworm-springs-wiper-attack-targeting-iran/,"A financially motivated data theft and extortion group is attempting to inject itself into the Iran war, unleashing a worm that spreads through poorly secured cloud services and wipes data on infected systems that use Iran’s time zone or have Farsi set as the default language. Experts say the wiper …",Alta
