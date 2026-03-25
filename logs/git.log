@@ -132,3 +132,9 @@ To https://github.com/mcasrom/admindash-osint.git
  create mode 100644 logs/scraper_2026-03-24.log
 To https://github.com/mcasrom/admindash-osint.git
    df2629b..5cd8d79  main -> main
+[main c318ce4] Auto update OSINT 2026-03-25 07:05
+ 7 files changed, 590 insertions(+)
+ create mode 100644 logs/audit_alert_2026-03-25.txt
+ create mode 100644 logs/normativa_2026-03-24.log
+ create mode 100644 logs/scraper_2026-03-25.log
+fatal: unable to access 'https://github.com/mcasrom/admindash-osint.git/': Could not resolve host: github.com
