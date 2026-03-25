@@ -2109,3 +2109,317 @@
 ⚠  No se encontraron artículos relevantes hoy.
 2026-03-24 07:05:25,466 [WARNING] No hay artículos que guardar hoy.
 2026-03-24 07:05:25,466 [INFO] === Scraper finalizado ===
+2026-03-25 06:05:02,436 [INFO] === Iniciando scraper OSINT — 2026-03-25T06:05:02.436495 ===
+2026-03-25 06:05:02,439 [INFO] Fuentes RSS configuradas: 25
+2026-03-25 06:05:02,439 [INFO]   → CERT-EU Security Advisories
+2026-03-25 06:05:02,544 [WARNING] URL error ([Errno -3] Temporary failure in name resolution) — https://cert.europa.eu/publications/security-advisories-rss
+2026-03-25 06:05:02,544 [INFO]   → CERT-EU Threat Intelligence
+2026-03-25 06:05:02,546 [WARNING] URL error ([Errno -3] Temporary failure in name resolution) — https://cert.europa.eu/publications/threat-intelligence-rss
+2026-03-25 06:05:02,547 [INFO]   → INCIBE Avisos de Seguridad
+2026-03-25 06:05:02,549 [WARNING] URL error ([Errno -3] Temporary failure in name resolution) — https://www.incibe.es/incibe-cert/alerta-temprana/avisos/feed
+2026-03-25 06:05:02,549 [INFO]   → INCIBE-CERT Vulnerabilidades
+2026-03-25 06:05:02,551 [WARNING] URL error ([Errno -3] Temporary failure in name resolution) — https://www.incibe.es/incibe-cert/alerta-temprana/vulnerabilidades/feed
+2026-03-25 06:05:02,551 [INFO]   → INCIBE Noticias
+2026-03-25 06:05:02,553 [WARNING] URL error ([Errno -3] Temporary failure in name resolution) — https://www.incibe.es/feed
+2026-03-25 06:05:02,553 [INFO]   → Dark Reading — Government
+2026-03-25 06:05:02,555 [WARNING] URL error ([Errno -3] Temporary failure in name resolution) — https://www.darkreading.com/rss.xml
+2026-03-25 06:05:02,556 [INFO]   → SANS Internet Stormcast
+2026-03-25 06:05:02,557 [WARNING] URL error ([Errno -3] Temporary failure in name resolution) — https://isc.sans.edu/rssfeed_full.xml
+2026-03-25 06:05:02,558 [INFO]   → Administración Digital (administracion.gob.es)
+2026-03-25 06:05:02,559 [WARNING] URL error ([Errno -3] Temporary failure in name resolution) — https://administracion.gob.es/pag_Home/rss.html
+2026-03-25 06:05:02,560 [INFO]   → PAe — Administración Electrónica
+2026-03-25 06:05:02,561 [WARNING] URL error ([Errno -3] Temporary failure in name resolution) — https://administracionelectronica.gob.es/pae_Home/rss/pae_Home_rss_noticias.html
+2026-03-25 06:05:02,562 [INFO]   → Observatorio OBSAE
+2026-03-25 06:05:02,563 [WARNING] URL error ([Errno -3] Temporary failure in name resolution) — https://administracionelectronica.gob.es/pae_Home/rss/pae_Home_rss_estadisticas.html
+2026-03-25 06:05:02,564 [INFO]   → datos.gob.es — Blog
+2026-03-25 06:05:02,565 [WARNING] URL error ([Errno -3] Temporary failure in name resolution) — https://datos.gob.es/es/blog/feed
+2026-03-25 06:05:02,566 [INFO]   → datos.gob.es — Noticias
+2026-03-25 06:05:02,568 [WARNING] URL error ([Errno -3] Temporary failure in name resolution) — https://datos.gob.es/es/noticia/feed
+2026-03-25 06:05:02,568 [INFO]   → EC Digital Strategy News
+2026-03-25 06:05:02,570 [WARNING] URL error ([Errno -3] Temporary failure in name resolution) — https://digital-strategy.ec.europa.eu/en/rss.xml
+2026-03-25 06:05:02,570 [INFO]   → EUR-Lex — OJ Diario Oficial
+2026-03-25 06:05:02,572 [WARNING] URL error ([Errno -3] Temporary failure in name resolution) — https://eur-lex.europa.eu/oj/direct-access.html?ojId=OJ%3AL&locale=es&rss=true
+2026-03-25 06:05:02,572 [INFO]   → BOE — Disposiciones Generales (hoy)
+2026-03-25 06:05:02,574 [WARNING] URL error ([Errno -3] Temporary failure in name resolution) — https://www.boe.es/rss/canal.php?s=dga&d=20260325
+2026-03-25 06:05:02,574 [INFO]   → BOE — Últimas disposiciones (semana)
+2026-03-25 06:05:02,576 [WARNING] URL error ([Errno -3] Temporary failure in name resolution) — https://www.boe.es/rss/canal.php?s=boe
+2026-03-25 06:05:02,576 [INFO]   → La Moncloa — Noticias de Gobierno
+2026-03-25 06:05:02,578 [WARNING] URL error ([Errno -3] Temporary failure in name resolution) — https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/rss/pages/rssnoticias.aspx
+2026-03-25 06:05:02,578 [INFO]   → Senado — Actividad Legislativa
+2026-03-25 06:05:02,580 [WARNING] URL error ([Errno -3] Temporary failure in name resolution) — https://www.senado.es/rss/actualidad/rss_senado.xml
+2026-03-25 06:05:02,580 [INFO]   → Krebs on Security
+2026-03-25 06:05:02,582 [WARNING] URL error ([Errno -3] Temporary failure in name resolution) — https://krebsonsecurity.com/feed/
+2026-03-25 06:05:02,582 [INFO]   → The Hacker News
+2026-03-25 06:05:02,584 [WARNING] URL error ([Errno -3] Temporary failure in name resolution) — https://feeds.feedburner.com/TheHackersNews
+2026-03-25 06:05:02,585 [INFO]   → Bleeping Computer
+2026-03-25 06:05:02,586 [WARNING] URL error ([Errno -3] Temporary failure in name resolution) — https://www.bleepingcomputer.com/feed/
+2026-03-25 06:05:02,587 [INFO]   → Securelist (Kaspersky ICS/APT)
+2026-03-25 06:05:02,588 [WARNING] URL error ([Errno -3] Temporary failure in name resolution) — https://securelist.com/feed/
+2026-03-25 06:05:02,589 [INFO]   → CISA Alerts (US-CERT)
+2026-03-25 06:05:02,590 [WARNING] URL error ([Errno -3] Temporary failure in name resolution) — https://www.cisa.gov/uscert/ncas/alerts.xml
+2026-03-25 06:05:02,591 [INFO]   → CISA Known Exploited Vulnerabilities
+2026-03-25 06:05:02,592 [WARNING] URL error ([Errno -3] Temporary failure in name resolution) — https://www.cisa.gov/uscert/ncas/current-activity.xml
+2026-03-25 06:05:02,593 [INFO]   → Comisión Europea — Noticias
+2026-03-25 06:05:02,594 [WARNING] URL error ([Errno -3] Temporary failure in name resolution) — https://ec.europa.eu/commission/presscorner/api/rss?keywords=digital&language=es
+2026-03-25 06:05:02,595 [INFO]   → BOE API (sumario del día)
+2026-03-25 06:05:02,596 [WARNING] URL error ([Errno -3] Temporary failure in name resolution) — https://boe.es/datosabiertos/api/boe/id/BOE-20260325
+2026-03-25 06:05:03,097 [INFO]   → datos.gob.es API
+2026-03-25 06:05:03,100 [WARNING] URL error ([Errno -3] Temporary failure in name resolution) — https://datos.gob.es/apidata/catalog/dataset?_sort=issued&_pageSize=20&_page=0&theme=http://datos.gob.es/kos/sector-publico/sector/sector-publico
+2026-03-25 06:05:03,101 [INFO] Filtro relevancia: 0 artículos nuevos → 0 relevantes
+2026-03-25 06:05:03,102 [INFO] Resumen: 0 fuentes OK / 25 fallos / 0 ítems procesados / 0 nuevos / 0 guardados
+2026-03-25 06:05:03,103 [WARNING] Umbral de fuentes superado: 0/25 OK (0.0% < 60% mínimo). Iniciando auditoría automática...
+2026-03-25 06:05:03,105 [INFO] === Auditoría de fuentes iniciada ===
+2026-03-25 06:05:03,107 [WARNING] URL error ([Errno -3] Temporary failure in name resolution) — https://cert.europa.eu/publications/security-advisories-rss
+2026-03-25 06:05:03,410 [WARNING] URL error ([Errno -3] Temporary failure in name resolution) — https://cert.europa.eu/publications/threat-intelligence-rss
+2026-03-25 06:05:03,712 [WARNING] URL error ([Errno -3] Temporary failure in name resolution) — https://www.incibe.es/incibe-cert/alerta-temprana/avisos/feed
+2026-03-25 06:05:04,014 [WARNING] URL error ([Errno -3] Temporary failure in name resolution) — https://www.incibe.es/incibe-cert/alerta-temprana/vulnerabilidades/feed
+2026-03-25 06:05:04,316 [WARNING] URL error ([Errno -3] Temporary failure in name resolution) — https://www.incibe.es/feed
+2026-03-25 06:05:04,618 [WARNING] URL error ([Errno -3] Temporary failure in name resolution) — https://www.darkreading.com/rss.xml
+2026-03-25 06:05:04,920 [WARNING] URL error ([Errno -3] Temporary failure in name resolution) — https://isc.sans.edu/rssfeed_full.xml
+2026-03-25 06:05:05,222 [WARNING] URL error ([Errno -3] Temporary failure in name resolution) — https://administracion.gob.es/pag_Home/rss.html
+2026-03-25 06:05:05,524 [WARNING] URL error ([Errno -3] Temporary failure in name resolution) — https://administracionelectronica.gob.es/pae_Home/rss/pae_Home_rss_noticias.html
+2026-03-25 06:05:05,826 [WARNING] URL error ([Errno -3] Temporary failure in name resolution) — https://administracionelectronica.gob.es/pae_Home/rss/pae_Home_rss_estadisticas.html
+2026-03-25 06:05:06,128 [WARNING] URL error ([Errno -3] Temporary failure in name resolution) — https://datos.gob.es/es/blog/feed
+2026-03-25 06:05:06,430 [WARNING] URL error ([Errno -3] Temporary failure in name resolution) — https://datos.gob.es/es/noticia/feed
+2026-03-25 06:05:06,732 [WARNING] URL error ([Errno -3] Temporary failure in name resolution) — https://digital-strategy.ec.europa.eu/en/rss.xml
+2026-03-25 06:05:07,034 [WARNING] URL error ([Errno -3] Temporary failure in name resolution) — https://eur-lex.europa.eu/oj/direct-access.html?ojId=OJ%3AL&locale=es&rss=true
+2026-03-25 06:05:07,336 [WARNING] URL error ([Errno -3] Temporary failure in name resolution) — https://www.boe.es/rss/canal.php?s=dga&d=20260325
+2026-03-25 06:05:07,638 [WARNING] URL error ([Errno -3] Temporary failure in name resolution) — https://www.boe.es/rss/canal.php?s=boe
+2026-03-25 06:05:07,943 [WARNING] URL error ([Errno -3] Temporary failure in name resolution) — https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/rss/pages/rssnoticias.aspx
+2026-03-25 06:05:08,245 [WARNING] URL error ([Errno -3] Temporary failure in name resolution) — https://www.senado.es/rss/actualidad/rss_senado.xml
+2026-03-25 06:05:08,547 [WARNING] URL error ([Errno -3] Temporary failure in name resolution) — https://krebsonsecurity.com/feed/
+2026-03-25 06:05:08,849 [WARNING] URL error ([Errno -3] Temporary failure in name resolution) — https://feeds.feedburner.com/TheHackersNews
+2026-03-25 06:05:09,151 [WARNING] URL error ([Errno -3] Temporary failure in name resolution) — https://www.bleepingcomputer.com/feed/
+2026-03-25 06:05:09,453 [WARNING] URL error ([Errno -3] Temporary failure in name resolution) — https://securelist.com/feed/
+2026-03-25 06:05:09,755 [WARNING] URL error ([Errno -3] Temporary failure in name resolution) — https://www.cisa.gov/uscert/ncas/alerts.xml
+2026-03-25 06:05:10,057 [WARNING] URL error ([Errno -3] Temporary failure in name resolution) — https://www.cisa.gov/uscert/ncas/current-activity.xml
+2026-03-25 06:05:10,358 [WARNING] URL error ([Errno -3] Temporary failure in name resolution) — https://ec.europa.eu/commission/presscorner/api/rss?keywords=digital&language=es
+
+==============================================================
+  AUDITORÍA DE FUENTES — 2026-03-25  🔴 ALERTA
+==============================================================
+  Fuentes OK:      0 / 25  (0.0%)
+  Fuentes FALLA:  25 / 25
+  Umbral mínimo: 60%  ⚠ SUPERADO
+
+  ❌  CERT-EU Security Advisories
+  ❌  CERT-EU Threat Intelligence
+  ❌  INCIBE Avisos de Seguridad
+  ❌  INCIBE-CERT Vulnerabilidades
+  ❌  INCIBE Noticias
+  ❌  Dark Reading — Government
+  ❌  SANS Internet Stormcast
+  ❌  Administración Digital (administracion.gob.es)
+  ❌  PAe — Administración Electrónica
+  ❌  Observatorio OBSAE
+  ❌  datos.gob.es — Blog
+  ❌  datos.gob.es — Noticias
+  ❌  EC Digital Strategy News
+  ❌  EUR-Lex — OJ Diario Oficial
+  ❌  BOE — Disposiciones Generales (hoy)
+  ❌  BOE — Últimas disposiciones (semana)
+  ❌  La Moncloa — Noticias de Gobierno
+  ❌  Senado — Actividad Legislativa
+  ❌  Krebs on Security
+  ❌  The Hacker News
+  ❌  Bleeping Computer
+  ❌  Securelist (Kaspersky ICS/APT)
+  ❌  CISA Alerts (US-CERT)
+  ❌  CISA Known Exploited Vulnerabilities
+  ❌  Comisión Europea — Noticias
+
+  Tendencia últimos 2 días:
+    2026-03-09  [█████████████████░░░]  22/25 (88%)
+  ⚠ 2026-03-25  [░░░░░░░░░░░░░░░░░░░░]  0/25 (0%)
+==============================================================
+
+2026-03-25 06:05:10,667 [WARNING] ⚠ ALERTA AUDITORÍA [2026-03-25]: Solo 0/25 fuentes OK (0.0%) — umbral mínimo: 60%
+Fuentes caídas:
+  - CERT-EU Security Advisories: https://cert.europa.eu/publications/security-advisories-rss
+  - CERT-EU Threat Intelligence: https://cert.europa.eu/publications/threat-intelligence-rss
+  - INCIBE Avisos de Seguridad: https://www.incibe.es/incibe-cert/alerta-temprana/avisos/feed
+  - INCIBE-CERT Vulnerabilidades: https://www.incibe.es/incibe-cert/alerta-temprana/vulnerabilidades/feed
+  - INCIBE Noticias: https://www.incibe.es/feed
+  - Dark Reading — Government: https://www.darkreading.com/rss.xml
+  - SANS Internet Stormcast: https://isc.sans.edu/rssfeed_full.xml
+  - Administración Digital (administracion.gob.es): https://administracion.gob.es/pag_Home/rss.html
+  - PAe — Administración Electrónica: https://administracionelectronica.gob.es/pae_Home/rss/pae_Home_rss_noticias.html
+  - Observatorio OBSAE: https://administracionelectronica.gob.es/pae_Home/rss/pae_Home_rss_estadisticas.html
+  - datos.gob.es — Blog: https://datos.gob.es/es/blog/feed
+  - datos.gob.es — Noticias: https://datos.gob.es/es/noticia/feed
+  - EC Digital Strategy News: https://digital-strategy.ec.europa.eu/en/rss.xml
+  - EUR-Lex — OJ Diario Oficial: https://eur-lex.europa.eu/oj/direct-access.html?ojId=OJ%3AL&locale=es&rss=true
+  - BOE — Disposiciones Generales (hoy): https://www.boe.es/rss/canal.php?s=dga&d=20260325
+  - BOE — Últimas disposiciones (semana): https://www.boe.es/rss/canal.php?s=boe
+  - La Moncloa — Noticias de Gobierno: https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/rss/pages/rssnoticias.aspx
+  - Senado — Actividad Legislativa: https://www.senado.es/rss/actualidad/rss_senado.xml
+  - Krebs on Security: https://krebsonsecurity.com/feed/
+  - The Hacker News: https://feeds.feedburner.com/TheHackersNews
+  - Bleeping Computer: https://www.bleepingcomputer.com/feed/
+  - Securelist (Kaspersky ICS/APT): https://securelist.com/feed/
+  - CISA Alerts (US-CERT): https://www.cisa.gov/uscert/ncas/alerts.xml
+  - CISA Known Exploited Vulnerabilities: https://www.cisa.gov/uscert/ncas/current-activity.xml
+  - Comisión Europea — Noticias: https://ec.europa.eu/commission/presscorner/api/rss?keywords=digital&language=es
+
+2026-03-25 06:05:10,669 [INFO] Alerta escrita en: logs/audit_alert_2026-03-25.txt
+
+⚠  No se encontraron artículos relevantes hoy.
+2026-03-25 06:05:10,674 [WARNING] No hay artículos que guardar hoy.
+2026-03-25 06:05:10,674 [INFO] === Scraper finalizado ===
+2026-03-25 07:05:02,268 [INFO] === Iniciando scraper OSINT — 2026-03-25T07:05:02.268208 ===
+2026-03-25 07:05:02,269 [INFO] Fuentes RSS configuradas: 25
+2026-03-25 07:05:02,270 [INFO]   → CERT-EU Security Advisories
+2026-03-25 07:05:02,383 [WARNING] URL error ([Errno -3] Temporary failure in name resolution) — https://cert.europa.eu/publications/security-advisories-rss
+2026-03-25 07:05:02,383 [INFO]   → CERT-EU Threat Intelligence
+2026-03-25 07:05:02,385 [WARNING] URL error ([Errno -3] Temporary failure in name resolution) — https://cert.europa.eu/publications/threat-intelligence-rss
+2026-03-25 07:05:02,386 [INFO]   → INCIBE Avisos de Seguridad
+2026-03-25 07:05:02,387 [WARNING] URL error ([Errno -3] Temporary failure in name resolution) — https://www.incibe.es/incibe-cert/alerta-temprana/avisos/feed
+2026-03-25 07:05:02,388 [INFO]   → INCIBE-CERT Vulnerabilidades
+2026-03-25 07:05:02,390 [WARNING] URL error ([Errno -3] Temporary failure in name resolution) — https://www.incibe.es/incibe-cert/alerta-temprana/vulnerabilidades/feed
+2026-03-25 07:05:02,390 [INFO]   → INCIBE Noticias
+2026-03-25 07:05:02,392 [WARNING] URL error ([Errno -3] Temporary failure in name resolution) — https://www.incibe.es/feed
+2026-03-25 07:05:02,392 [INFO]   → Dark Reading — Government
+2026-03-25 07:05:02,394 [WARNING] URL error ([Errno -3] Temporary failure in name resolution) — https://www.darkreading.com/rss.xml
+2026-03-25 07:05:02,394 [INFO]   → SANS Internet Stormcast
+2026-03-25 07:05:02,396 [WARNING] URL error ([Errno -3] Temporary failure in name resolution) — https://isc.sans.edu/rssfeed_full.xml
+2026-03-25 07:05:02,397 [INFO]   → Administración Digital (administracion.gob.es)
+2026-03-25 07:05:02,398 [WARNING] URL error ([Errno -3] Temporary failure in name resolution) — https://administracion.gob.es/pag_Home/rss.html
+2026-03-25 07:05:02,399 [INFO]   → PAe — Administración Electrónica
+2026-03-25 07:05:02,401 [WARNING] URL error ([Errno -3] Temporary failure in name resolution) — https://administracionelectronica.gob.es/pae_Home/rss/pae_Home_rss_noticias.html
+2026-03-25 07:05:02,401 [INFO]   → Observatorio OBSAE
+2026-03-25 07:05:02,403 [WARNING] URL error ([Errno -3] Temporary failure in name resolution) — https://administracionelectronica.gob.es/pae_Home/rss/pae_Home_rss_estadisticas.html
+2026-03-25 07:05:02,404 [INFO]   → datos.gob.es — Blog
+2026-03-25 07:05:02,405 [WARNING] URL error ([Errno -3] Temporary failure in name resolution) — https://datos.gob.es/es/blog/feed
+2026-03-25 07:05:02,406 [INFO]   → datos.gob.es — Noticias
+2026-03-25 07:05:02,408 [WARNING] URL error ([Errno -3] Temporary failure in name resolution) — https://datos.gob.es/es/noticia/feed
+2026-03-25 07:05:02,408 [INFO]   → EC Digital Strategy News
+2026-03-25 07:05:02,410 [WARNING] URL error ([Errno -3] Temporary failure in name resolution) — https://digital-strategy.ec.europa.eu/en/rss.xml
+2026-03-25 07:05:02,411 [INFO]   → EUR-Lex — OJ Diario Oficial
+2026-03-25 07:05:02,412 [WARNING] URL error ([Errno -3] Temporary failure in name resolution) — https://eur-lex.europa.eu/oj/direct-access.html?ojId=OJ%3AL&locale=es&rss=true
+2026-03-25 07:05:02,413 [INFO]   → BOE — Disposiciones Generales (hoy)
+2026-03-25 07:05:02,415 [WARNING] URL error ([Errno -3] Temporary failure in name resolution) — https://www.boe.es/rss/canal.php?s=dga&d=20260325
+2026-03-25 07:05:02,415 [INFO]   → BOE — Últimas disposiciones (semana)
+2026-03-25 07:05:02,417 [WARNING] URL error ([Errno -3] Temporary failure in name resolution) — https://www.boe.es/rss/canal.php?s=boe
+2026-03-25 07:05:02,418 [INFO]   → La Moncloa — Noticias de Gobierno
+2026-03-25 07:05:02,419 [WARNING] URL error ([Errno -3] Temporary failure in name resolution) — https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/rss/pages/rssnoticias.aspx
+2026-03-25 07:05:02,420 [INFO]   → Senado — Actividad Legislativa
+2026-03-25 07:05:02,421 [WARNING] URL error ([Errno -3] Temporary failure in name resolution) — https://www.senado.es/rss/actualidad/rss_senado.xml
+2026-03-25 07:05:02,422 [INFO]   → Krebs on Security
+2026-03-25 07:05:02,424 [WARNING] URL error ([Errno -3] Temporary failure in name resolution) — https://krebsonsecurity.com/feed/
+2026-03-25 07:05:02,424 [INFO]   → The Hacker News
+2026-03-25 07:05:02,426 [WARNING] URL error ([Errno -3] Temporary failure in name resolution) — https://feeds.feedburner.com/TheHackersNews
+2026-03-25 07:05:02,426 [INFO]   → Bleeping Computer
+2026-03-25 07:05:02,428 [WARNING] URL error ([Errno -3] Temporary failure in name resolution) — https://www.bleepingcomputer.com/feed/
+2026-03-25 07:05:02,428 [INFO]   → Securelist (Kaspersky ICS/APT)
+2026-03-25 07:05:02,430 [WARNING] URL error ([Errno -3] Temporary failure in name resolution) — https://securelist.com/feed/
+2026-03-25 07:05:02,430 [INFO]   → CISA Alerts (US-CERT)
+2026-03-25 07:05:02,432 [WARNING] URL error ([Errno -3] Temporary failure in name resolution) — https://www.cisa.gov/uscert/ncas/alerts.xml
+2026-03-25 07:05:02,433 [INFO]   → CISA Known Exploited Vulnerabilities
+2026-03-25 07:05:02,435 [WARNING] URL error ([Errno -3] Temporary failure in name resolution) — https://www.cisa.gov/uscert/ncas/current-activity.xml
+2026-03-25 07:05:02,436 [INFO]   → Comisión Europea — Noticias
+2026-03-25 07:05:02,438 [WARNING] URL error ([Errno -3] Temporary failure in name resolution) — https://ec.europa.eu/commission/presscorner/api/rss?keywords=digital&language=es
+2026-03-25 07:05:02,438 [INFO]   → BOE API (sumario del día)
+2026-03-25 07:05:02,440 [WARNING] URL error ([Errno -3] Temporary failure in name resolution) — https://boe.es/datosabiertos/api/boe/id/BOE-20260325
+2026-03-25 07:05:02,941 [INFO]   → datos.gob.es API
+2026-03-25 07:05:02,943 [WARNING] URL error ([Errno -3] Temporary failure in name resolution) — https://datos.gob.es/apidata/catalog/dataset?_sort=issued&_pageSize=20&_page=0&theme=http://datos.gob.es/kos/sector-publico/sector/sector-publico
+2026-03-25 07:05:02,944 [INFO] Filtro relevancia: 0 artículos nuevos → 0 relevantes
+2026-03-25 07:05:02,944 [INFO] Resumen: 0 fuentes OK / 25 fallos / 0 ítems procesados / 0 nuevos / 0 guardados
+2026-03-25 07:05:02,945 [WARNING] Umbral de fuentes superado: 0/25 OK (0.0% < 60% mínimo). Iniciando auditoría automática...
+2026-03-25 07:05:02,945 [INFO] === Auditoría de fuentes iniciada ===
+2026-03-25 07:05:02,946 [WARNING] URL error ([Errno -3] Temporary failure in name resolution) — https://cert.europa.eu/publications/security-advisories-rss
+2026-03-25 07:05:03,248 [WARNING] URL error ([Errno -3] Temporary failure in name resolution) — https://cert.europa.eu/publications/threat-intelligence-rss
+2026-03-25 07:05:03,551 [WARNING] URL error ([Errno -3] Temporary failure in name resolution) — https://www.incibe.es/incibe-cert/alerta-temprana/avisos/feed
+2026-03-25 07:05:03,853 [WARNING] URL error ([Errno -3] Temporary failure in name resolution) — https://www.incibe.es/incibe-cert/alerta-temprana/vulnerabilidades/feed
+2026-03-25 07:05:04,155 [WARNING] URL error ([Errno -3] Temporary failure in name resolution) — https://www.incibe.es/feed
+2026-03-25 07:05:04,457 [WARNING] URL error ([Errno -3] Temporary failure in name resolution) — https://www.darkreading.com/rss.xml
+2026-03-25 07:05:04,759 [WARNING] URL error ([Errno -3] Temporary failure in name resolution) — https://isc.sans.edu/rssfeed_full.xml
+2026-03-25 07:05:05,062 [WARNING] URL error ([Errno -3] Temporary failure in name resolution) — https://administracion.gob.es/pag_Home/rss.html
+2026-03-25 07:05:05,364 [WARNING] URL error ([Errno -3] Temporary failure in name resolution) — https://administracionelectronica.gob.es/pae_Home/rss/pae_Home_rss_noticias.html
+2026-03-25 07:05:05,666 [WARNING] URL error ([Errno -3] Temporary failure in name resolution) — https://administracionelectronica.gob.es/pae_Home/rss/pae_Home_rss_estadisticas.html
+2026-03-25 07:05:05,968 [WARNING] URL error ([Errno -3] Temporary failure in name resolution) — https://datos.gob.es/es/blog/feed
+2026-03-25 07:05:06,270 [WARNING] URL error ([Errno -3] Temporary failure in name resolution) — https://datos.gob.es/es/noticia/feed
+2026-03-25 07:05:06,572 [WARNING] URL error ([Errno -3] Temporary failure in name resolution) — https://digital-strategy.ec.europa.eu/en/rss.xml
+2026-03-25 07:05:06,874 [WARNING] URL error ([Errno -3] Temporary failure in name resolution) — https://eur-lex.europa.eu/oj/direct-access.html?ojId=OJ%3AL&locale=es&rss=true
+2026-03-25 07:05:07,176 [WARNING] URL error ([Errno -3] Temporary failure in name resolution) — https://www.boe.es/rss/canal.php?s=dga&d=20260325
+2026-03-25 07:05:07,478 [WARNING] URL error ([Errno -3] Temporary failure in name resolution) — https://www.boe.es/rss/canal.php?s=boe
+2026-03-25 07:05:07,780 [WARNING] URL error ([Errno -3] Temporary failure in name resolution) — https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/rss/pages/rssnoticias.aspx
+2026-03-25 07:05:08,082 [WARNING] URL error ([Errno -3] Temporary failure in name resolution) — https://www.senado.es/rss/actualidad/rss_senado.xml
+2026-03-25 07:05:08,384 [WARNING] URL error ([Errno -3] Temporary failure in name resolution) — https://krebsonsecurity.com/feed/
+2026-03-25 07:05:08,686 [WARNING] URL error ([Errno -3] Temporary failure in name resolution) — https://feeds.feedburner.com/TheHackersNews
+2026-03-25 07:05:08,988 [WARNING] URL error ([Errno -3] Temporary failure in name resolution) — https://www.bleepingcomputer.com/feed/
+2026-03-25 07:05:09,290 [WARNING] URL error ([Errno -3] Temporary failure in name resolution) — https://securelist.com/feed/
+2026-03-25 07:05:09,592 [WARNING] URL error ([Errno -3] Temporary failure in name resolution) — https://www.cisa.gov/uscert/ncas/alerts.xml
+2026-03-25 07:05:09,894 [WARNING] URL error ([Errno -3] Temporary failure in name resolution) — https://www.cisa.gov/uscert/ncas/current-activity.xml
+2026-03-25 07:05:10,196 [WARNING] URL error ([Errno -3] Temporary failure in name resolution) — https://ec.europa.eu/commission/presscorner/api/rss?keywords=digital&language=es
+
+==============================================================
+  AUDITORÍA DE FUENTES — 2026-03-25  🔴 ALERTA
+==============================================================
+  Fuentes OK:      0 / 25  (0.0%)
+  Fuentes FALLA:  25 / 25
+  Umbral mínimo: 60%  ⚠ SUPERADO
+
+  ❌  CERT-EU Security Advisories
+  ❌  CERT-EU Threat Intelligence
+  ❌  INCIBE Avisos de Seguridad
+  ❌  INCIBE-CERT Vulnerabilidades
+  ❌  INCIBE Noticias
+  ❌  Dark Reading — Government
+  ❌  SANS Internet Stormcast
+  ❌  Administración Digital (administracion.gob.es)
+  ❌  PAe — Administración Electrónica
+  ❌  Observatorio OBSAE
+  ❌  datos.gob.es — Blog
+  ❌  datos.gob.es — Noticias
+  ❌  EC Digital Strategy News
+  ❌  EUR-Lex — OJ Diario Oficial
+  ❌  BOE — Disposiciones Generales (hoy)
+  ❌  BOE — Últimas disposiciones (semana)
+  ❌  La Moncloa — Noticias de Gobierno
+  ❌  Senado — Actividad Legislativa
+  ❌  Krebs on Security
+  ❌  The Hacker News
+  ❌  Bleeping Computer
+  ❌  Securelist (Kaspersky ICS/APT)
+  ❌  CISA Alerts (US-CERT)
+  ❌  CISA Known Exploited Vulnerabilities
+  ❌  Comisión Europea — Noticias
+
+  Tendencia últimos 2 días:
+    2026-03-09  [█████████████████░░░]  22/25 (88%)
+  ⚠ 2026-03-25  [░░░░░░░░░░░░░░░░░░░░]  0/25 (0%)
+==============================================================
+
+2026-03-25 07:05:10,504 [WARNING] ⚠ ALERTA AUDITORÍA [2026-03-25]: Solo 0/25 fuentes OK (0.0%) — umbral mínimo: 60%
+Fuentes caídas:
+  - CERT-EU Security Advisories: https://cert.europa.eu/publications/security-advisories-rss
+  - CERT-EU Threat Intelligence: https://cert.europa.eu/publications/threat-intelligence-rss
+  - INCIBE Avisos de Seguridad: https://www.incibe.es/incibe-cert/alerta-temprana/avisos/feed
+  - INCIBE-CERT Vulnerabilidades: https://www.incibe.es/incibe-cert/alerta-temprana/vulnerabilidades/feed
+  - INCIBE Noticias: https://www.incibe.es/feed
+  - Dark Reading — Government: https://www.darkreading.com/rss.xml
+  - SANS Internet Stormcast: https://isc.sans.edu/rssfeed_full.xml
+  - Administración Digital (administracion.gob.es): https://administracion.gob.es/pag_Home/rss.html
+  - PAe — Administración Electrónica: https://administracionelectronica.gob.es/pae_Home/rss/pae_Home_rss_noticias.html
+  - Observatorio OBSAE: https://administracionelectronica.gob.es/pae_Home/rss/pae_Home_rss_estadisticas.html
+  - datos.gob.es — Blog: https://datos.gob.es/es/blog/feed
+  - datos.gob.es — Noticias: https://datos.gob.es/es/noticia/feed
+  - EC Digital Strategy News: https://digital-strategy.ec.europa.eu/en/rss.xml
+  - EUR-Lex — OJ Diario Oficial: https://eur-lex.europa.eu/oj/direct-access.html?ojId=OJ%3AL&locale=es&rss=true
+  - BOE — Disposiciones Generales (hoy): https://www.boe.es/rss/canal.php?s=dga&d=20260325
+  - BOE — Últimas disposiciones (semana): https://www.boe.es/rss/canal.php?s=boe
+  - La Moncloa — Noticias de Gobierno: https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/rss/pages/rssnoticias.aspx
+  - Senado — Actividad Legislativa: https://www.senado.es/rss/actualidad/rss_senado.xml
+  - Krebs on Security: https://krebsonsecurity.com/feed/
+  - The Hacker News: https://feeds.feedburner.com/TheHackersNews
+  - Bleeping Computer: https://www.bleepingcomputer.com/feed/
+  - Securelist (Kaspersky ICS/APT): https://securelist.com/feed/
+  - CISA Alerts (US-CERT): https://www.cisa.gov/uscert/ncas/alerts.xml
+  - CISA Known Exploited Vulnerabilities: https://www.cisa.gov/uscert/ncas/current-activity.xml
+  - Comisión Europea — Noticias: https://ec.europa.eu/commission/presscorner/api/rss?keywords=digital&language=es
+
+2026-03-25 07:05:10,512 [INFO] Alerta escrita en: logs/audit_alert_2026-03-25.txt
+
+⚠  No se encontraron artículos relevantes hoy.
+2026-03-25 07:05:10,518 [WARNING] No hay artículos que guardar hoy.
+2026-03-25 07:05:10,518 [INFO] === Scraper finalizado ===

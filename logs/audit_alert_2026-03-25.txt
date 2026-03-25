@@ -1,0 +1,29 @@
+⚠ ALERTA AUDITORÍA [2026-03-25]: Solo 0/25 fuentes OK (0.0%) — umbral mínimo: 60%
+Fuentes caídas:
+  - CERT-EU Security Advisories: https://cert.europa.eu/publications/security-advisories-rss
+  - CERT-EU Threat Intelligence: https://cert.europa.eu/publications/threat-intelligence-rss
+  - INCIBE Avisos de Seguridad: https://www.incibe.es/incibe-cert/alerta-temprana/avisos/feed
+  - INCIBE-CERT Vulnerabilidades: https://www.incibe.es/incibe-cert/alerta-temprana/vulnerabilidades/feed
+  - INCIBE Noticias: https://www.incibe.es/feed
+  - Dark Reading — Government: https://www.darkreading.com/rss.xml
+  - SANS Internet Stormcast: https://isc.sans.edu/rssfeed_full.xml
+  - Administración Digital (administracion.gob.es): https://administracion.gob.es/pag_Home/rss.html
+  - PAe — Administración Electrónica: https://administracionelectronica.gob.es/pae_Home/rss/pae_Home_rss_noticias.html
+  - Observatorio OBSAE: https://administracionelectronica.gob.es/pae_Home/rss/pae_Home_rss_estadisticas.html
+  - datos.gob.es — Blog: https://datos.gob.es/es/blog/feed
+  - datos.gob.es — Noticias: https://datos.gob.es/es/noticia/feed
+  - EC Digital Strategy News: https://digital-strategy.ec.europa.eu/en/rss.xml
+  - EUR-Lex — OJ Diario Oficial: https://eur-lex.europa.eu/oj/direct-access.html?ojId=OJ%3AL&locale=es&rss=true
+  - BOE — Disposiciones Generales (hoy): https://www.boe.es/rss/canal.php?s=dga&d=20260325
+  - BOE — Últimas disposiciones (semana): https://www.boe.es/rss/canal.php?s=boe
+  - La Moncloa — Noticias de Gobierno: https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/rss/pages/rssnoticias.aspx
+  - Senado — Actividad Legislativa: https://www.senado.es/rss/actualidad/rss_senado.xml
+  - Krebs on Security: https://krebsonsecurity.com/feed/
+  - The Hacker News: https://feeds.feedburner.com/TheHackersNews
+  - Bleeping Computer: https://www.bleepingcomputer.com/feed/
+  - Securelist (Kaspersky ICS/APT): https://securelist.com/feed/
+  - CISA Alerts (US-CERT): https://www.cisa.gov/uscert/ncas/alerts.xml
+  - CISA Known Exploited Vulnerabilities: https://www.cisa.gov/uscert/ncas/current-activity.xml
+  - Comisión Europea — Noticias: https://ec.europa.eu/commission/presscorner/api/rss?keywords=digital&language=es
+
+Sugerencia: ejecuta 'python3 osint_scraper.py --audit' para diagnóstico completo.

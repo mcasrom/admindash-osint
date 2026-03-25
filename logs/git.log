@@ -125,3 +125,10 @@ To https://github.com/mcasrom/admindash-osint.git
  create mode 100644 logs/scraper_2026-03-23.log
 To https://github.com/mcasrom/admindash-osint.git
    1c7a193..df2629b  main -> main
+[main 5cd8d79] Auto update OSINT 2026-03-24 07:05
+ 7 files changed, 226 insertions(+)
+ create mode 100644 data/osint_2026-03-24.csv
+ create mode 100644 logs/normativa_2026-03-23.log
+ create mode 100644 logs/scraper_2026-03-24.log
+To https://github.com/mcasrom/admindash-osint.git
+   df2629b..5cd8d79  main -> main
