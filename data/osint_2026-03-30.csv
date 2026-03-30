@@ -1,0 +1,2 @@
+date,title,source,category,url,summary,severity
+2026-03-30,"DShield (Cowrie) Honeypot Stats and When Sessions Disconnect, (Mon, Mar 30th)",SANS Internet Stormcast,Ciberseguridad EU,https://isc.sans.edu/diary/rss/32840,"A lot of the information seen on DShield honeypots [1] is repeated bot traffic, especially when looking at the Cowrie [2] telnet and SSH sessions. However, how long a session lasts, how many commands are run per session and what the last commands run before a session disconnects can vary. Some of th…",Crítica
