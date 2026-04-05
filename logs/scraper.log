@@ -3756,3 +3756,101 @@ Fuentes caídas:
 ⚠  No se encontraron artículos relevantes hoy.
 2026-04-04 07:05:41,796 [WARNING] No hay artículos que guardar hoy.
 2026-04-04 07:05:41,796 [INFO] === Scraper finalizado ===
+2026-04-05 06:05:02,191 [INFO] === Iniciando scraper OSINT — 2026-04-05T06:05:02.191158 ===
+2026-04-05 06:05:02,193 [INFO] Fuentes RSS configuradas: 25
+2026-04-05 06:05:02,194 [INFO]   → CERT-EU Security Advisories
+/home/dietpi/admindash-osint/osint_scraper.py:454: DeprecationWarning: Testing an element's truth value will always return True in future versions.  Use specific 'len(elem)' or 'elem is not None' test instead.
+  date_el    = item.find("pubDate") or item.find("dc:date", RSS_NS)
+/home/dietpi/admindash-osint/osint_scraper.py:455: DeprecationWarning: Testing an element's truth value will always return True in future versions.  Use specific 'len(elem)' or 'elem is not None' test instead.
+  summary_el = item.find("description") or item.find("content:encoded", RSS_NS)
+2026-04-05 06:05:03,112 [INFO]   → CERT-EU Threat Intelligence
+2026-04-05 06:05:03,870 [INFO]   → INCIBE Avisos de Seguridad
+2026-04-05 06:05:04,642 [INFO]   → INCIBE-CERT Vulnerabilidades
+2026-04-05 06:05:05,335 [INFO]   → INCIBE Noticias
+2026-04-05 06:05:05,689 [WARNING] HTTP 404 — https://www.incibe.es/feed
+2026-04-05 06:05:05,690 [INFO]   → Dark Reading — Government
+2026-04-05 06:05:07,236 [INFO]   → SANS Internet Stormcast
+2026-04-05 06:05:08,682 [INFO]   → Administración Digital (administracion.gob.es)
+2026-04-05 06:05:09,076 [WARNING] XML parse error en Administración Digital (administracion.gob.es): not well-formed (invalid token): line 94, column 18
+2026-04-05 06:05:09,577 [INFO]   → PAe — Administración Electrónica
+2026-04-05 06:05:25,229 [INFO]   → Observatorio OBSAE
+2026-04-05 06:05:40,871 [INFO]   → datos.gob.es — Blog
+2026-04-05 06:05:41,324 [WARNING] XML parse error en datos.gob.es — Blog: not well-formed (invalid token): line 37, column 75
+2026-04-05 06:05:41,825 [INFO]   → datos.gob.es — Noticias
+2026-04-05 06:05:42,172 [WARNING] XML parse error en datos.gob.es — Noticias: not well-formed (invalid token): line 37, column 75
+2026-04-05 06:05:42,673 [INFO]   → EC Digital Strategy News
+2026-04-05 06:05:43,366 [INFO]   → EUR-Lex — OJ Diario Oficial
+2026-04-05 06:05:45,079 [WARNING] XML parse error en EUR-Lex — OJ Diario Oficial: mismatched tag: line 178, column 10
+2026-04-05 06:05:45,580 [INFO]   → BOE — Disposiciones Generales (hoy)
+2026-04-05 06:05:45,678 [WARNING] XML parse error en BOE — Disposiciones Generales (hoy): mismatched tag: line 22, column 4
+2026-04-05 06:05:46,179 [INFO]   → BOE — Últimas disposiciones (semana)
+2026-04-05 06:05:46,271 [WARNING] XML parse error en BOE — Últimas disposiciones (semana): mismatched tag: line 22, column 4
+2026-04-05 06:05:46,771 [INFO]   → La Moncloa — Noticias de Gobierno
+2026-04-05 06:05:47,006 [WARNING] XML parse error en La Moncloa — Noticias de Gobierno: not well-formed (invalid token): line 12, column 14
+2026-04-05 06:05:47,507 [INFO]   → Senado — Actividad Legislativa
+2026-04-05 06:05:47,596 [WARNING] HTTP 404 — https://www.senado.es/rss/actualidad/rss_senado.xml
+2026-04-05 06:05:47,597 [INFO]   → Krebs on Security
+2026-04-05 06:05:48,270 [INFO]   → The Hacker News
+2026-04-05 06:05:49,135 [INFO]   → Bleeping Computer
+2026-04-05 06:05:49,707 [INFO]   → Securelist (Kaspersky ICS/APT)
+2026-04-05 06:05:51,238 [INFO]   → CISA Alerts (US-CERT)
+2026-04-05 06:05:52,782 [INFO]   → CISA Known Exploited Vulnerabilities
+2026-04-05 06:05:53,963 [INFO]   → Comisión Europea — Noticias
+2026-04-05 06:05:55,269 [INFO]   → BOE API (sumario del día)
+2026-04-05 06:05:55,353 [WARNING] HTTP 404 — https://boe.es/datosabiertos/api/boe/id/BOE-20260405
+2026-04-05 06:05:55,855 [INFO]   → datos.gob.es API
+2026-04-05 06:05:56,089 [INFO] Filtro relevancia: 3 artículos nuevos → 0 relevantes
+2026-04-05 06:05:56,091 [INFO] Resumen: 23 fuentes OK / 2 fallos / 235 ítems procesados / 3 nuevos / 0 guardados
+
+⚠  No se encontraron artículos relevantes hoy.
+2026-04-05 06:05:56,099 [WARNING] No hay artículos que guardar hoy.
+2026-04-05 06:05:56,099 [INFO] === Scraper finalizado ===
+2026-04-05 07:05:02,371 [INFO] === Iniciando scraper OSINT — 2026-04-05T07:05:02.370862 ===
+2026-04-05 07:05:02,372 [INFO] Fuentes RSS configuradas: 25
+2026-04-05 07:05:02,372 [INFO]   → CERT-EU Security Advisories
+/home/dietpi/admindash-osint/osint_scraper.py:454: DeprecationWarning: Testing an element's truth value will always return True in future versions.  Use specific 'len(elem)' or 'elem is not None' test instead.
+  date_el    = item.find("pubDate") or item.find("dc:date", RSS_NS)
+/home/dietpi/admindash-osint/osint_scraper.py:455: DeprecationWarning: Testing an element's truth value will always return True in future versions.  Use specific 'len(elem)' or 'elem is not None' test instead.
+  summary_el = item.find("description") or item.find("content:encoded", RSS_NS)
+2026-04-05 07:05:03,350 [INFO]   → CERT-EU Threat Intelligence
+2026-04-05 07:05:04,103 [INFO]   → INCIBE Avisos de Seguridad
+2026-04-05 07:05:05,084 [INFO]   → INCIBE-CERT Vulnerabilidades
+2026-04-05 07:05:05,792 [INFO]   → INCIBE Noticias
+2026-04-05 07:05:06,934 [WARNING] HTTP 404 — https://www.incibe.es/feed
+2026-04-05 07:05:06,936 [INFO]   → Dark Reading — Government
+2026-04-05 07:05:07,978 [INFO]   → SANS Internet Stormcast
+2026-04-05 07:05:09,416 [INFO]   → Administración Digital (administracion.gob.es)
+2026-04-05 07:05:09,848 [WARNING] XML parse error en Administración Digital (administracion.gob.es): not well-formed (invalid token): line 94, column 18
+2026-04-05 07:05:10,349 [INFO]   → PAe — Administración Electrónica
+2026-04-05 07:05:16,103 [INFO]   → Observatorio OBSAE
+2026-04-05 07:05:16,745 [INFO]   → datos.gob.es — Blog
+2026-04-05 07:05:17,735 [WARNING] XML parse error en datos.gob.es — Blog: not well-formed (invalid token): line 37, column 75
+2026-04-05 07:05:18,266 [INFO]   → datos.gob.es — Noticias
+2026-04-05 07:05:18,600 [WARNING] XML parse error en datos.gob.es — Noticias: not well-formed (invalid token): line 37, column 75
+2026-04-05 07:05:19,101 [INFO]   → EC Digital Strategy News
+2026-04-05 07:05:19,806 [INFO]   → EUR-Lex — OJ Diario Oficial
+2026-04-05 07:05:21,561 [WARNING] XML parse error en EUR-Lex — OJ Diario Oficial: mismatched tag: line 178, column 10
+2026-04-05 07:05:22,062 [INFO]   → BOE — Disposiciones Generales (hoy)
+2026-04-05 07:05:22,161 [WARNING] XML parse error en BOE — Disposiciones Generales (hoy): mismatched tag: line 22, column 4
+2026-04-05 07:05:22,661 [INFO]   → BOE — Últimas disposiciones (semana)
+2026-04-05 07:05:22,758 [WARNING] XML parse error en BOE — Últimas disposiciones (semana): mismatched tag: line 22, column 4
+2026-04-05 07:05:23,288 [INFO]   → La Moncloa — Noticias de Gobierno
+2026-04-05 07:05:23,524 [WARNING] XML parse error en La Moncloa — Noticias de Gobierno: not well-formed (invalid token): line 12, column 14
+2026-04-05 07:05:24,025 [INFO]   → Senado — Actividad Legislativa
+2026-04-05 07:05:24,120 [WARNING] HTTP 404 — https://www.senado.es/rss/actualidad/rss_senado.xml
+2026-04-05 07:05:24,122 [INFO]   → Krebs on Security
+2026-04-05 07:05:24,791 [INFO]   → The Hacker News
+2026-04-05 07:05:25,632 [INFO]   → Bleeping Computer
+2026-04-05 07:05:26,207 [INFO]   → Securelist (Kaspersky ICS/APT)
+2026-04-05 07:05:27,834 [INFO]   → CISA Alerts (US-CERT)
+2026-04-05 07:05:29,262 [INFO]   → CISA Known Exploited Vulnerabilities
+2026-04-05 07:05:30,159 [INFO]   → Comisión Europea — Noticias
+2026-04-05 07:05:31,264 [INFO]   → BOE API (sumario del día)
+2026-04-05 07:05:31,330 [WARNING] HTTP 404 — https://boe.es/datosabiertos/api/boe/id/BOE-20260405
+2026-04-05 07:05:31,832 [INFO]   → datos.gob.es API
+2026-04-05 07:05:32,036 [INFO] Filtro relevancia: 0 artículos nuevos → 0 relevantes
+2026-04-05 07:05:32,037 [INFO] Resumen: 23 fuentes OK / 2 fallos / 235 ítems procesados / 0 nuevos / 0 guardados
+
+⚠  No se encontraron artículos relevantes hoy.
+2026-04-05 07:05:32,045 [WARNING] No hay artículos que guardar hoy.
+2026-04-05 07:05:32,046 [INFO] === Scraper finalizado ===
