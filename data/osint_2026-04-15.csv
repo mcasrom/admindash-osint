@@ -1,0 +1,2 @@
+date,title,source,category,url,summary,severity
+2026-04-15,"Microsoft Patch Tuesday April 2026., (Tue, Apr 14th)",SANS Internet Stormcast,Ciberseguridad EU,https://isc.sans.edu/diary/rss/32898,"This month's Microsoft Patch Tuesday looks like a record one, but let's look at it a bit closer to understand what is happening The update patches a total of 243 vulnerabilities. However, 78 of them are Chromium issues affecting Microsoft Edge. Patches for Edge were released earlier. This leaves 165…",Crítica
