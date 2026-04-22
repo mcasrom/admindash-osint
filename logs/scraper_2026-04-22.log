@@ -1,0 +1,86 @@
+2026-04-22 06:05:01,701 [INFO] === Iniciando scraper OSINT — 2026-04-22T06:05:01.701103 ===
+2026-04-22 06:05:01,702 [INFO] Fuentes RSS configuradas: 25
+2026-04-22 06:05:01,702 [INFO]   → CERT-EU Security Advisories
+2026-04-22 06:05:02,685 [INFO]   → CERT-EU Threat Intelligence
+2026-04-22 06:05:03,509 [INFO]   → INCIBE Avisos de Seguridad
+2026-04-22 06:05:04,306 [INFO]   → INCIBE-CERT Vulnerabilidades
+2026-04-22 06:05:05,044 [INFO]   → INCIBE Noticias
+2026-04-22 06:05:06,139 [WARNING] HTTP 404 — https://www.incibe.es/feed
+2026-04-22 06:05:06,140 [INFO]   → Dark Reading — Government
+2026-04-22 06:05:07,048 [INFO]   → SANS Internet Stormcast
+2026-04-22 06:05:08,488 [INFO]   → Administración Digital (administracion.gob.es)
+2026-04-22 06:05:08,959 [WARNING] XML parse error en Administración Digital (administracion.gob.es): not well-formed (invalid token): line 94, column 18
+2026-04-22 06:05:09,460 [INFO]   → PAe — Administración Electrónica
+2026-04-22 06:05:25,071 [INFO]   → Observatorio OBSAE
+2026-04-22 06:05:40,733 [INFO]   → datos.gob.es — Blog
+2026-04-22 06:05:41,974 [WARNING] XML parse error en datos.gob.es — Blog: not well-formed (invalid token): line 37, column 75
+2026-04-22 06:05:42,475 [INFO]   → datos.gob.es — Noticias
+2026-04-22 06:05:42,947 [WARNING] XML parse error en datos.gob.es — Noticias: not well-formed (invalid token): line 37, column 75
+2026-04-22 06:05:43,448 [INFO]   → EC Digital Strategy News
+2026-04-22 06:05:44,177 [INFO]   → EUR-Lex — OJ Diario Oficial
+2026-04-22 06:05:44,755 [WARNING] XML parse error en EUR-Lex — OJ Diario Oficial: mismatched tag: line 170, column 10
+2026-04-22 06:05:45,256 [INFO]   → BOE — Disposiciones Generales (hoy)
+2026-04-22 06:05:45,353 [WARNING] XML parse error en BOE — Disposiciones Generales (hoy): mismatched tag: line 22, column 4
+2026-04-22 06:05:45,854 [INFO]   → BOE — Últimas disposiciones (semana)
+2026-04-22 06:05:45,952 [WARNING] XML parse error en BOE — Últimas disposiciones (semana): mismatched tag: line 22, column 4
+2026-04-22 06:05:46,453 [INFO]   → La Moncloa — Noticias de Gobierno
+2026-04-22 06:05:46,715 [WARNING] XML parse error en La Moncloa — Noticias de Gobierno: not well-formed (invalid token): line 12, column 14
+2026-04-22 06:05:47,216 [INFO]   → Senado — Actividad Legislativa
+2026-04-22 06:05:47,299 [WARNING] HTTP 404 — https://www.senado.es/rss/actualidad/rss_senado.xml
+2026-04-22 06:05:47,300 [INFO]   → Krebs on Security
+2026-04-22 06:05:48,116 [INFO]   → The Hacker News
+2026-04-22 06:05:48,915 [INFO]   → Bleeping Computer
+2026-04-22 06:05:49,484 [INFO]   → Securelist (Kaspersky ICS/APT)
+2026-04-22 06:05:51,066 [INFO]   → CISA Alerts (US-CERT)
+2026-04-22 06:05:52,951 [INFO]   → CISA Known Exploited Vulnerabilities
+2026-04-22 06:05:53,909 [INFO]   → Comisión Europea — Noticias
+2026-04-22 06:05:55,047 [INFO]   → BOE API (sumario del día)
+2026-04-22 06:05:55,131 [WARNING] HTTP 404 — https://boe.es/datosabiertos/api/boe/id/BOE-20260422
+2026-04-22 06:05:55,632 [INFO]   → datos.gob.es API
+2026-04-22 06:05:55,998 [INFO] Filtro relevancia: 38 artículos nuevos → 8 relevantes
+2026-04-22 06:05:55,999 [INFO] Resumen: 23 fuentes OK / 2 fallos / 235 ítems procesados / 38 nuevos / 8 guardados
+2026-04-22 06:05:56,009 [INFO] CSV guardado: data/osint_2026-04-22.csv (8 artículos)
+2026-04-22 06:05:56,012 [INFO] === Scraper finalizado ===
+2026-04-22 07:05:02,082 [INFO] === Iniciando scraper OSINT — 2026-04-22T07:05:02.081970 ===
+2026-04-22 07:05:02,094 [INFO] Fuentes RSS configuradas: 25
+2026-04-22 07:05:02,094 [INFO]   → CERT-EU Security Advisories
+2026-04-22 07:05:03,091 [INFO]   → CERT-EU Threat Intelligence
+2026-04-22 07:05:03,853 [INFO]   → INCIBE Avisos de Seguridad
+2026-04-22 07:05:04,627 [INFO]   → INCIBE-CERT Vulnerabilidades
+2026-04-22 07:05:05,465 [INFO]   → INCIBE Noticias
+2026-04-22 07:05:06,580 [WARNING] HTTP 404 — https://www.incibe.es/feed
+2026-04-22 07:05:06,581 [INFO]   → Dark Reading — Government
+2026-04-22 07:05:07,670 [INFO]   → SANS Internet Stormcast
+2026-04-22 07:05:09,114 [INFO]   → Administración Digital (administracion.gob.es)
+2026-04-22 07:05:09,593 [WARNING] XML parse error en Administración Digital (administracion.gob.es): not well-formed (invalid token): line 94, column 18
+2026-04-22 07:05:10,094 [INFO]   → PAe — Administración Electrónica
+2026-04-22 07:05:25,687 [INFO]   → Observatorio OBSAE
+2026-04-22 07:05:41,292 [INFO]   → datos.gob.es — Blog
+2026-04-22 07:05:41,517 [WARNING] XML parse error en datos.gob.es — Blog: not well-formed (invalid token): line 37, column 75
+2026-04-22 07:05:42,018 [INFO]   → datos.gob.es — Noticias
+2026-04-22 07:05:42,843 [WARNING] XML parse error en datos.gob.es — Noticias: not well-formed (invalid token): line 37, column 75
+2026-04-22 07:05:43,344 [INFO]   → EC Digital Strategy News
+2026-04-22 07:05:44,155 [INFO]   → EUR-Lex — OJ Diario Oficial
+2026-04-22 07:05:46,190 [WARNING] XML parse error en EUR-Lex — OJ Diario Oficial: mismatched tag: line 178, column 10
+2026-04-22 07:05:46,691 [INFO]   → BOE — Disposiciones Generales (hoy)
+2026-04-22 07:05:46,792 [WARNING] XML parse error en BOE — Disposiciones Generales (hoy): mismatched tag: line 22, column 4
+2026-04-22 07:05:47,293 [INFO]   → BOE — Últimas disposiciones (semana)
+2026-04-22 07:05:47,397 [WARNING] XML parse error en BOE — Últimas disposiciones (semana): mismatched tag: line 22, column 4
+2026-04-22 07:05:47,898 [INFO]   → La Moncloa — Noticias de Gobierno
+2026-04-22 07:05:48,218 [WARNING] XML parse error en La Moncloa — Noticias de Gobierno: not well-formed (invalid token): line 12, column 14
+2026-04-22 07:05:48,719 [INFO]   → Senado — Actividad Legislativa
+2026-04-22 07:05:48,797 [WARNING] HTTP 404 — https://www.senado.es/rss/actualidad/rss_senado.xml
+2026-04-22 07:05:48,799 [INFO]   → Krebs on Security
+2026-04-22 07:05:49,515 [INFO]   → The Hacker News
+2026-04-22 07:05:50,489 [INFO]   → Bleeping Computer
+2026-04-22 07:05:51,084 [INFO]   → Securelist (Kaspersky ICS/APT)
+2026-04-22 07:05:52,735 [INFO]   → CISA Alerts (US-CERT)
+2026-04-22 07:05:54,678 [INFO]   → CISA Known Exploited Vulnerabilities
+2026-04-22 07:05:55,614 [INFO]   → Comisión Europea — Noticias
+2026-04-22 07:05:56,825 [INFO]   → BOE API (sumario del día)
+2026-04-22 07:05:56,916 [WARNING] HTTP 404 — https://boe.es/datosabiertos/api/boe/id/BOE-20260422
+2026-04-22 07:05:57,417 [INFO]   → datos.gob.es API
+2026-04-22 07:05:57,613 [INFO] Filtro relevancia: 0 artículos nuevos → 0 relevantes
+2026-04-22 07:05:57,614 [INFO] Resumen: 23 fuentes OK / 2 fallos / 235 ítems procesados / 0 nuevos / 0 guardados
+2026-04-22 07:05:57,621 [WARNING] No hay artículos que guardar hoy.
+2026-04-22 07:05:57,621 [INFO] === Scraper finalizado ===
