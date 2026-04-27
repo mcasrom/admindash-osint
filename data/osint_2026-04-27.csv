@@ -1,0 +1,2 @@
+date,title,source,category,url,summary,severity
+2026-04-27,An AI gateway designed to steal your data,Securelist (Kaspersky ICS/APT),Ciberseguridad Internacional,https://securelist.com/litellm-supply-chain-attack/119257/,"A significant proportion of cyberincidents are linked to supply chain attacks, and this proportion is constantly growing. Over the past year, we have seen a wide variety of methods used in such attacks, ranging from creation of malicious but seemingly legitimate open-source libraries or delayed atta…",Crítica
